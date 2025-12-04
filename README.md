@@ -3,8 +3,11 @@
 1. Las frases Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors y Attribute selectors, encontradas en el documento html, han de estar vinculadas (utilizar la etiqueta a) a los siguientes enlaces:
 
 https://www.w3schools.com/css/css_combinators.asp
+
 https://www.w3schools.com/css/css_pseudo_classes.asp
+
 https://www.w3schools.com/css/css_pseudo_elements.asp
+
 https://www.w3schools.com/css/css_attribute_selectors.asp
 
 2. Utilizar Google Fonts para cambiar el tipo de fuente del documento

@@ -1,63 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- REGLA 2: Utilizar Font Awesome para añadir un icono de página -->
+    <link rel="icon" href="resources/css-brands-solid-full.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <title>CSS Selectors</title>
 </head>
-
 <body>
+    <!-- REGLA 3.3: Los elementos h1 estarán subrayados, de color darkcyan y alineados al centro -->
     <h1>CSS Selectors</h1>
     <p>A CSS selector selects the HTML element(s) you want to style.</p>
+    <!-- REGLA 3.5: Los elementos con clase selectors tendrán un relleno de 5%, un border: solid darkcyan 1px y esquinas redondeadas -->
     <div class="selectors">
         <h2>CSS Selectors</h2>
         <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
         <p>We can divide CSS selectors into five categories:</p>
         <ul>
             <li>Simple selectors (select elements based on name, id, class)</li>
-            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
-            <li>Pseudo-class selectors (select elements based on a certain state)
+            <!-- REGLA 3.9: Los elementos a que sean hijos directos de algún li tendrán text-decoration: none -->
+            <li><a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">Combinator selectors</a> (select elements based on a specific relationship between them)</li>
+            <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo-class selectors</a> (select elements based on a certain state)
             </li>
-            <li>Pseudo-elements selectors (select and style a part of an element)</li>
-            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elements selectors</a> (select and style a part of an element)</li>
+            <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
         </ul>
     </div>
     <hr>
+    <!-- REGLA 3.4: Los elementos con clase selector tendrán color lightcyan -->
+    <!-- REGLA 3.7: Los elementos h2 con clase selector tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas -->
     <h2 class="selector">The CSS <span>element</span> Selector</h2>
+    <!-- REGLA 3.8: Los elementos span tendrán font-weight: 900, color de fondo negro y color de texto blanco -->
     <p>The element selector selects HTML elements based on the element <span>name</span> (body, p, h1, h5, a, div, etc.).</p>
     <hr>
+    <!-- REGLA 3.4: Los elementos con clase selector tendrán color lightcyan -->
+    <!-- REGLA 3.7: Los elementos h2 con clase selector tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas -->
     <h2 class="selector">The CSS <span>id</span> Selector</h2>
     <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
     <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+    <!-- REGLA 3.8: Los elementos span tendrán font-weight: 900, color de fondo negro y color de texto blanco -->
     <p>To select an element with a specific id, write a hash <span>(#)</span> character, followed by the id of the element.</p>
     <hr>
+    <!-- REGLA 3.4: Los elementos con clase selector tendrán color lightcyan -->
+    <!-- REGLA 3.7: Los elementos h2 con clase selector tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas -->
     <h2 class="selector">The CSS <span>class</span> Selector</h2>
     <p>The class selector selects HTML elements with a specific class attribute.</p>
+    <!-- REGLA 3.8: Los elementos span tendrán font-weight: 900, color de fondo negro y color de texto blanco -->
     <p>To select elements with a specific class, write a period <span>(.)</span> character, followed by the class name.</p>
     <hr>
-
+    <!-- REGLA 3.6: Los elementos con identificador (id) universal tendrán color lightgoldenrodyellow -->
+    <!-- REGLA 3.7: Los elementos h2 con identificador (id) universal tendrán color de fondo darkcyan, relleno de 1% y esquinas redondeadas -->
     <h2 id="universal">The CSS <span>Universal</span> Selector</h2>
+    <!-- REGLA 3.8: Los elementos span tendrán font-weight: 900, color de fondo negro y color de texto blanco -->
     <p>The universal selector <span>(*)</span> selects all HTML elements on the page.</p>
-
     <div>
         <p>Use our <a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">CSS Selector Tester</a> to demonstrate the different selectors. </p>
     </div>
     <hr>
-
+    <!-- REGLA 3.11: Los elementos div que sean descendientes de un elemento con id gallery tendrán un ancho width de 100% -->
     <div id="gallery">
         <div>
+            <!-- REGLA 3.10: Los elementos h3 tendrán color de fondo rgba(0, 139, 139, 0.529), relleno de 0.5px y esquinas redondeadas -->
             <h3>CSS Syntax</h3>
+            <!-- REGLA 3.12: Los elementos img tendrán un ancho width de 100%, un border: solid darkcyan 1px y esquinas redondeadas -->
             <img src="./resources/regla_css.jpg" alt="">
         </div>
+        <!-- BONUS: Tabla de selectores CSS en lugar de imagen -->
         <div>
+            <!-- REGLA 3.10: Los elementos h3 tendrán color de fondo rgba(0, 139, 139, 0.529), relleno de 0.5px y esquinas redondeadas -->
             <h3>All CSS Simple Selectors</h3>
-            <img src="./resources/selectors.png" alt="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Example</th>
+                        <th>Example description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#id</td>
+                        <td>#firstname</td>
+                        <td>Selects the element with id="firstname"</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>.intro</td>
+                        <td>Selects all elements with class="intro"</td>
+                    </tr>
+                    <tr>
+                        <td>element.class</td>
+                        <td>p.intro</td>
+                        <td>Selects only &lt;p&gt; elements with class="intro"</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>Selects all elements</td>
+                    </tr>
+                    <tr>
+                        <td>element</td>
+                        <td>p</td>
+                        <td>Selects all &lt;p&gt; elements</td>
+                    </tr>
+                    <tr>
+                        <td>element,element,..</td>
+                        <td>div, p</td>
+                        <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
         </div>
     </div>
-
 </body>
-
 </html>
